@@ -1,5 +1,5 @@
 # US and South Korea COVID-19 Response Comparison & Analysis
-[2020_05_09] Pratt SAVI 810 Final Project
+[2020_05_11] Pratt SAVI 810 - Python for GIS Final Project
 
 
 # Project Proposal
@@ -20,7 +20,7 @@ Since writing the code is the challenging part. Do not think about this in scope
 
 
 
-## Assignment 04 Submission
+## Project Submission
 You will **Fork** and **Clone this Repo** and **edit this README.md Markdown file**. This is your submission, just the link to your forked Repo and edited README.md file. This project should be the edited version of this README.md (**Markdown**) file. 
 
 #### Learn more about [Markdown](https://www.markdownguide.org/). 
@@ -34,13 +34,8 @@ Most code editors allow editing of Markdown files, some recommended editors are;
 * [Dillinger (edit in-browser)](https://dillinger.io/)
 * You can even edit inside of [GitHub](https://github.com/). 
 
-Your Assignment 04 Deliverables are listed below:
-
 
 # Deliverables
-
-You should edit the following items in-line and substitute any of the provided text with your response below for your README.md Assignment 04 submission. 
-
 
 ---
 
@@ -250,8 +245,6 @@ Also note any libraries or functionality that you may need that you're not sure 
 
 
 ## Project Execution Plan Outline
-Please include a short outline describing the steps you'd imagine going through. 
-
 
 <blockquote>
 Week of 4/20/2020 <br>
