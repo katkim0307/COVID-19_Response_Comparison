@@ -26,13 +26,13 @@ https://katkim0307.github.io/COVID-19_Response_Comparison//Data/output/us_state_
 https://katkim0307.github.io/COVID-19_Response_Comparison//Data/output/us_state_history.html
 
 #### Korea Choropleth Map of Total Confirmed Cases
-[sample02](https://raw.githubusercontent.com/katkim0307/COVID-19_Response_Comparison/master/Data/image/sample02.PNG)
+![sample02](https://raw.githubusercontent.com/katkim0307/COVID-19_Response_Comparison/master/Data/image/sample02.PNG)
 
 #### U.S. vs. Korea Early Stage of the outbreak
-[![sample03](https://raw.githubusercontent.com/katkim0307/COVID-19_Response_Comparison/master/Data/image/sample03.PNG)]
-[![sample04](https://raw.githubusercontent.com/katkim0307/COVID-19_Response_Comparison/master/Data/image/sample04.PNG)]
-[![sample05](https://raw.githubusercontent.com/katkim0307/COVID-19_Response_Comparison/master/Data/image/sample05.PNG)]
-[![sample06](https://raw.githubusercontent.com/katkim0307/COVID-19_Response_Comparison/master/Data/image/sample06.PNG)]
+![sample03](https://raw.githubusercontent.com/katkim0307/COVID-19_Response_Comparison/master/Data/image/sample03.PNG)
+![sample04](https://raw.githubusercontent.com/katkim0307/COVID-19_Response_Comparison/master/Data/image/sample04.PNG)
+![sample05](https://raw.githubusercontent.com/katkim0307/COVID-19_Response_Comparison/master/Data/image/sample05.PNG)
+![sample06](https://raw.githubusercontent.com/katkim0307/COVID-19_Response_Comparison/master/Data/image/sample06.PNG)
 
 
 ## Resources
