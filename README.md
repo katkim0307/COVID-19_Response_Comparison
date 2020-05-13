@@ -1,24 +1,22 @@
-# US and South Korea COVID-19 Response Comparison & Analysis
-
-## Executive Summary
-
-A _brief description_ of your final project idea. 
+# US and South Korea COVID-19 Outbreak Response Comparison & Analysis
 
 - **Why** are you doing this project? 
-	- Amid the Novel Coronavirus pandemic, I would like to provide a clear presentation of the different COVID-19 outbreak responses, specifically South Korea and the U.S., and their outcomes
+	- Amid the Novel Coronavirus pandemic, I would like to provide a clear presentation of the different COVID-19 outbreak early responses, specifically South Korea and the United States, and their outcomes
     
 - **How** do you imagine you'll accomplish this project? 
-	- Collect COVID-19 data from both US government and South Korea government
-	- Organize and modify collected data
+	- Collect COVID-19 data of both the United States and South Korea
+	- Organize and manipulate collected data
 	- Create interactive maps, charts, timelines
-	- Compare and contrast
-	- Analyze 
+	- Compare and analyze
 
 
 ## Background
 
 The initial idea behind this project was to create a tool to automate an interactive map for **contact tracing**. Contact tracing is a concept of tracing and monitoring contacts and travels of each confirmed case (infected person).  Sharing this data anonymously to the public and notifying people of their exposure.  Ultimately this helps to prevent additional transmission.  China, South Korea, Taiwan, and Singapore effectively and successfully utilized technology for contact tracing and slowed the spread of coronavirus.  However, due to privacy concerns, western countries like the U.S., Italy, Spain, and France are experiencing difficulty deploying technology to share data on the confirmed cases. <br><br>
-South Korea has been looked up to by many country leaders who are fighting against the novel coronavirus.  South Korea and Hong Kong are the top two countries that are successfully beating the pandemic.  I wanted to see how South Korea's approach and response differed to the U.S.'.  This will include not only COVID-19 related data (confirmed cases, fatalities, testing, etc.) but also each country leader's and their administration's response, WHO/CDC/HHS's announcements, and other major changes affected by coronavirus.  I will then analyze the comparison and contrast with appropriate data visualization.
+South Korea has been looked up to by many country leaders who are fighting against the novel coronavirus. South Korea is one of the few countries that are successfully beating the pandemic without a complete lockdown. I wanted to see how South Korea's approach and response to COVID-19 outbreak differed to the U.S.'. This will include not only COVID-19 related data (confirmed cases, fatalities, testing, etc.) but also each country administration's response including WHO/CDC/HHS's announcements and other administrative changes affected by coronavirus. I will then analyze the comparison and contrast with appropriate data visualization.
+
+
+## Sample Output
 
 
 ## Resources
@@ -46,7 +44,8 @@ South Korea has been looked up to by many country leaders who are fighting again
 #### South Korea COVID-19 Data
 * Korean Centers for Disease Control and Prevention 
 	- http://www.cdc.go.kr/cdc/ 
-	- https://www.cdc.go.kr/board/board.es?mid=a20501000000&bid=0015   
+	- [Eng] https://www.cdc.go.kr/board/board.es?mid=a30402000000&bid=0030
+	- [Kor] https://www.cdc.go.kr/board/board.es?mid=a20501000000&bid=0015   
     
 * Korean Ministrty of Health and Welfare
 	- http://ncov.mohw.go.kr/ 
@@ -108,45 +107,46 @@ South Korea has been looked up to by many country leaders who are fighting again
 
 #### Python Libraries
 
+* `import os`
+* `import sys`
+* `import request`
+
+* `import pandas as pd` 
+	- create data structures, perform data analysis and manipulation
+    
+* `import geopandas as gpd` / `from geopandas import GeoDataFrame`
+	- work with geospatial data and perform spatial/geometric operations (done by shapely) on geometric types
+	- manage projections, geocode, geoprocess
+    
 * `import datetime`
 	- work with dates as date objects (manipulate dates)
-
-* `import matplotlib.pyplot as plt`
-	- create static, animated, and interactive data visualizations
-    
-* `import seaborn as sns`
-	- based on Matplotlib, provides a high-level interface for data visualization
 
 * `import numpy as np`
 	- scientific computing for multidimentional array objects
 
-* `import pandas as pd` 
-	- create data structures, perform data analysis and manipulation
+* `import matplotlib.pyplot as plt`
+	- create static, animated, and interactive data visualizations
 
-* `import geopandas as gpd` / `from geopandas import GeoDataFrame`
-	- work with geospatial data and perform spatial/geometric operations (done by shapely) on geometric types
-	- manage projections, geocode, geoprocess
+* `import matplotlib.dates as mdates`
 
-* `from shapely.geometry import Point` 
-	- MultiPoint, LineString, MultiLineString, Polygon, etc
-    
-* `import folium`
-	- create interactive leaflet map
+* `import matplotlib.ticker as ticker`
+
+* `import matplotlib.patches as patches`
+
+* `import matplotlib.cm as cm`
+
+* `import matplotlib.colors as colors`
+
+* `import plotly`
 
 * `import plotly.express as px`
-	- (interface to Plotly) create interactive maps 
-
-* `from geopy.geocoders import Nominatim`
-	- locate the coordinates of addresses, cities, countires, and landmarks across the globe
-	- Nominatim is a search engine for OpenStreetMap data
+	- (interface to Plotly) to create interactive choropleth maps of the US (State Level)
     
-* `import networkx as nx`
-	- create and manipulate networks' structure, dynamics, and functions
+* `import plotly.figure_factory as ff`
+	- (interface to Plotly) to create interactive choropleth maps of the US (County Level)
 
-* `import osmnx as ox`
-	- retrieve, model, analyze, and visualize street networks from OpenStreetMap
-	- download spatial geometries and model, project, visualize, and analyze street networks and other spatial data from OSM's APIs
-    
+* `import plotly.graph_objs as go`
+	- (interface to Plotly) to create interactive choropleth maps of the US with hover text
 
 
 ## Measuring Success: 
@@ -163,8 +163,6 @@ South Korea has been looked up to by many country leaders who are fighting again
 
 ## Project Execution Plan Outline
 
-<blockquote>
-Week of 4/20/2020 <br>
 * Background Research 
 	- check location of dataset and data validity
 
@@ -175,16 +173,10 @@ Week of 4/20/2020 <br>
 * Exploratory Spatial Data Processing for Interpretation/Analysis
 	- Summarize the input data, plot and examine any columns that may be useful. 
 
-
-Week of 4/27
 * Exploratory Non-Spatial Data Processing for Interpretation/Analysis
 	- Summarize the input data, plot and examine any columns that may be useful. 
 
-
-Week of 5/4
 * Results and Conclusion 
-	- Key findings
-	- Was your Project Successful. 
+	- Key observations/findings
 	- Generate Assumptions and Limitations. 
-</blockquote>
 
