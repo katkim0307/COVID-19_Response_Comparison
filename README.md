@@ -16,14 +16,15 @@ The initial idea behind this project was to create a tool to automate an interac
 South Korea has been looked up to by many country leaders who are fighting against the novel coronavirus. South Korea is one of the few countries that are successfully beating the pandemic without a complete lockdown. I wanted to see how South Korea's approach and response to COVID-19 outbreak differed to the U.S.'. This will include not only COVID-19 related data (confirmed cases, fatalities, testing, etc.) but also each country administration's response including WHO/CDC/HHS's announcements and other administrative changes affected by coronavirus. I will then analyze the comparison and contrast with appropriate data visualization.
 
 
-## Sample Output
+## Sample Outputs
 
 #### U.S. Choropleth Map of Total Confirmed Cases
 ![sample01](https://raw.githubusercontent.com/katkim0307/COVID-19_Response_Comparison/master/Data/image/sample01.PNG)
 
 #### You can view interactive choropleth maps here:
-https://katkim0307.github.io/COVID-19_Response_Comparison//Data/output/us_state_latest.html
-https://katkim0307.github.io/COVID-19_Response_Comparison//Data/output/us_state_history.html
+[![sample07](https://raw.githubusercontent.com/katkim0307/COVID-19_Response_Comparison/master/Data/image/sample07.PNG)](https://katkim0307.github.io/COVID-19_Response_Comparison//Data/output/us_state_latest.html)
+
+[![sample08](https://raw.githubusercontent.com/katkim0307/COVID-19_Response_Comparison/master/Data/image/sample08.PNG)](https://katkim0307.github.io/COVID-19_Response_Comparison//Data/output/us_state_history.html)
 
 #### Korea Choropleth Map of Total Confirmed Cases
 ![sample02](https://raw.githubusercontent.com/katkim0307/COVID-19_Response_Comparison/master/Data/image/sample02.PNG)
