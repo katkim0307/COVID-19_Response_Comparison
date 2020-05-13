@@ -20,23 +20,7 @@
   </component>
   <component name="ChangeListManager">
     <list default="true" id="6424fead-2dfe-4df5-92d3-7fd77117c0a9" name="Default Changelist" comment="">
-      <change afterPath="$PROJECT_DIR$/Tools/convert_to_gdf.py" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/.ipynb_checkpoints/main_notebook-checkpoint.ipynb" beforeDir="false" afterPath="$PROJECT_DIR$/.ipynb_checkpoints/main_notebook-checkpoint.ipynb" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Data/output/us_county_latest.html" beforeDir="false" afterPath="$PROJECT_DIR$/Data/output/us_county_latest.html" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Data/output/us_state_history.html" beforeDir="false" afterPath="$PROJECT_DIR$/Data/output/us_state_history.html" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Data/output/us_state_latest.html" beforeDir="false" afterPath="$PROJECT_DIR$/Data/output/us_state_latest.html" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Notebooks/.ipynb_checkpoints/Final-checkpoint.ipynb" beforeDir="false" afterPath="$PROJECT_DIR$/Notebooks/.ipynb_checkpoints/Final-checkpoint.ipynb" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Notebooks/.ipynb_checkpoints/us_cov19_data-checkpoint.ipynb" beforeDir="false" afterPath="$PROJECT_DIR$/Notebooks/.ipynb_checkpoints/us_cov19_data-checkpoint.ipynb" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Notebooks/Final.ipynb" beforeDir="false" afterPath="$PROJECT_DIR$/Notebooks/Final.ipynb" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Notebooks/us_cov19_data.ipynb" beforeDir="false" afterPath="$PROJECT_DIR$/Notebooks/us_cov19_data.ipynb" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/README.md" beforeDir="false" afterPath="$PROJECT_DIR$/README.md" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Tools/jhu_county_df_manipulate.py" beforeDir="false" afterPath="$PROJECT_DIR$/Tools/jhu_county_df_manipulate.py" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Tools/merge_state_dfgdf.py" beforeDir="false" afterPath="$PROJECT_DIR$/Tools/merge_state_dfgdf.py" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/kor_latest_total_confirmed_cases_by_provinces.png" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/main_draft.py" beforeDir="false" afterPath="$PROJECT_DIR$/main_draft.py" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/main_notebook.ipynb" beforeDir="false" afterPath="$PROJECT_DIR$/main_notebook.ipynb" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/us_latest_total_confirmed_cases_by_states.png" beforeDir="false" afterPath="$PROJECT_DIR$/us_latest_total_confirmed_cases_by_states.png" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
