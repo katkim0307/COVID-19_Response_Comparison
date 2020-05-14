@@ -12,7 +12,7 @@
 
 ## Background
 
-The initial idea behind this project was to create a tool to automate an interactive map for **contact tracing**. Contact tracing is a concept of tracing and monitoring contacts and travels of each confirmed case (infected person).  Sharing this data anonymously to the public and notifying people of their exposure.  Ultimately this helps to prevent additional transmission.  China, South Korea, Taiwan, and Singapore effectively and successfully utilized technology for contact tracing and slowed the spread of coronavirus.  However, due to privacy concerns, western countries like the U.S., Italy, Spain, and France are experiencing difficulty deploying technology to share data on the confirmed cases. <br><br>
+The initial idea behind this project was to create a tool to automate an interactive map for confirmed cases **contact tracing**. Contact tracing is a concept of tracing and monitoring contacts and travels of each confirmed case (infected person).  Sharing this data anonymously to the public and notifying people of their exposure.  Ultimately this helps to prevent additional transmission.  China, South Korea, Taiwan, and Singapore effectively and successfully utilized technology for contact tracing and slowed the spread of coronavirus.  However, due to privacy concerns, western countries like the U.S., Italy, Spain, and France are experiencing difficulty deploying technology to share data on the confirmed cases. <br><br>
 South Korea has been looked up to by many country leaders who are fighting against the novel coronavirus. South Korea is one of the few countries that are successfully beating the pandemic without a complete lockdown. I wanted to see how South Korea's approach and response to COVID-19 outbreak differed to the U.S.'. This will include not only COVID-19 related data (confirmed cases, fatalities, testing, etc.) but also each country administration's response including WHO/CDC/HHS's announcements and other administrative changes affected by coronavirus. I will then analyze the comparison and contrast with appropriate data visualization.
 
 
@@ -21,13 +21,16 @@ South Korea has been looked up to by many country leaders who are fighting again
 #### U.S. Choropleth Map of Total Confirmed Cases
 ![sample01](https://raw.githubusercontent.com/katkim0307/COVID-19_Response_Comparison/master/Data/image/sample01.PNG)
 
-#### You can view interactive choropleth maps here:
+#### You can view interactive time-series choropleth maps by clicking the photo below:
 [![sample07](https://raw.githubusercontent.com/katkim0307/COVID-19_Response_Comparison/master/Data/image/sample07.PNG)](https://katkim0307.github.io/COVID-19_Response_Comparison//Data/output/us_state_latest.html)
 
 [![sample08](https://raw.githubusercontent.com/katkim0307/COVID-19_Response_Comparison/master/Data/image/sample08.PNG)](https://katkim0307.github.io/COVID-19_Response_Comparison//Data/output/us_state_history.html)
 
 #### Korea Choropleth Map of Total Confirmed Cases
 ![sample02](https://raw.githubusercontent.com/katkim0307/COVID-19_Response_Comparison/master/Data/image/sample02.PNG)
+
+#### Korea Time-Series Choropleth Map of Total Confirmed Cases
+![kor_cov19_gif](https://raw.githubusercontent.com/katkim0307/COVID-19_Response_Comparison/master/Data/image/kor_province_gifs.gif)
 
 #### U.S. vs. Korea Early Stage of the outbreak
 ![sample03](https://raw.githubusercontent.com/katkim0307/COVID-19_Response_Comparison/master/Data/image/sample03.PNG)
