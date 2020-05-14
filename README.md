@@ -30,7 +30,7 @@ South Korea has been looked up to by many country leaders who are fighting again
 ![sample02](https://raw.githubusercontent.com/katkim0307/COVID-19_Response_Comparison/master/Data/image/sample02.PNG)
 
 #### Korea Time-Series Choropleth Map of Total Confirmed Cases
-![kor_cov19_gif](https://raw.githubusercontent.com/katkim0307/COVID-19_Response_Comparison/master/Data/image/kor_province_gifs.gif)
+![kor_cov19_gif](https://raw.githubusercontent.com/katkim0307/COVID-19_Response_Comparison/master/Data/image/kor_province_gifs/kor_cov19_gif.gif)
 
 #### U.S. vs. Korea Early Stage of the outbreak
 ![sample03](https://raw.githubusercontent.com/katkim0307/COVID-19_Response_Comparison/master/Data/image/sample03.PNG)
