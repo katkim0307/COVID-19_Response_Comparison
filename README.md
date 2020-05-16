@@ -19,7 +19,7 @@ South Korea has been looked up to by many country leaders who are fighting again
 ## Sample Outputs
 
 #### U.S. Choropleth Map of Total Confirmed Cases
-![sample01](https://raw.githubusercontent.com/katkim0307/COVID-19_Response_Comparison/master/Data/image/sample01.PNG)
+![sample01](https://raw.githubusercontent.com/katkim0307/COVID-19_Response_Comparison/master/Data/image/us_cases_choro_basic.png)
 
 #### You can view interactive time-series choropleth maps by clicking the photo below:
 [![sample07](https://raw.githubusercontent.com/katkim0307/COVID-19_Response_Comparison/master/Data/image/sample07.PNG)](https://katkim0307.github.io/COVID-19_Response_Comparison//Data/output/us_state_latest.html)
@@ -27,16 +27,16 @@ South Korea has been looked up to by many country leaders who are fighting again
 [![sample08](https://raw.githubusercontent.com/katkim0307/COVID-19_Response_Comparison/master/Data/image/sample08.PNG)](https://katkim0307.github.io/COVID-19_Response_Comparison//Data/output/us_state_history.html)
 
 #### Korea Choropleth Map of Total Confirmed Cases
-![sample02](https://raw.githubusercontent.com/katkim0307/COVID-19_Response_Comparison/master/Data/image/sample02.PNG)
+![sample02](https://raw.githubusercontent.com/katkim0307/COVID-19_Response_Comparison/master/Data/image/kor_cases_choro_basic.pmg)
 
 #### Korea Time-Series Choropleth Map of Total Confirmed Cases
 ![kor_cov19_gif](https://raw.githubusercontent.com/katkim0307/COVID-19_Response_Comparison/master/Data/image/kor_province_gifs/kor_cov19_gif_full_size.gif)
 
 #### U.S. vs. Korea Early Stage of the outbreak
-![sample03](https://raw.githubusercontent.com/katkim0307/COVID-19_Response_Comparison/master/Data/image/sample03.PNG)
-![sample04](https://raw.githubusercontent.com/katkim0307/COVID-19_Response_Comparison/master/Data/image/sample04.PNG)
-![sample05](https://raw.githubusercontent.com/katkim0307/COVID-19_Response_Comparison/master/Data/image/sample05.PNG)
-![sample06](https://raw.githubusercontent.com/katkim0307/COVID-19_Response_Comparison/master/Data/image/sample06.PNG)
+![sample03](https://raw.githubusercontent.com/katkim0307/COVID-19_Response_Comparison/master/Data/image/us_vs_kor_early_line_graph_compare.png)
+![sample04](https://raw.githubusercontent.com/katkim0307/COVID-19_Response_Comparison/master/Data/image/us_vs_kor_early_bar_line_graph_compare.png)
+![sample05](https://raw.githubusercontent.com/katkim0307/COVID-19_Response_Comparison/master/Data/image/us_vs_kor_early_overlaid_bar_line_graph.png)
+![sample06](https://raw.githubusercontent.com/katkim0307/COVID-19_Response_Comparison/master/Data/image/us_vs_kor_overlaid_line_graph.png)
 ![per_1000](https://raw.githubusercontent.com/katkim0307/COVID-19_Response_Comparison/master/Data/image/us_vs_kor_per_1000.png)
 
 
