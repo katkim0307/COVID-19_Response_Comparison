@@ -22,9 +22,11 @@ South Korea has been looked up to by many country leaders who are fighting again
 ![sample01](https://raw.githubusercontent.com/katkim0307/COVID-19_Response_Comparison/master/Data/image/us_cases_choro_basic.png)
 
 #### You can view interactive time-series choropleth maps by clicking the photo below:
-[![sample07](https://raw.githubusercontent.com/katkim0307/COVID-19_Response_Comparison/master/Data/image/sample07.PNG)](https://katkim0307.github.io/COVID-19_Response_Comparison//Data/output/us_state_latest.html)
+[![sample07](https://raw.githubusercontent.com/katkim0307/COVID-19_Response_Comparison/master/Data/image/us_cases_choro_hoverdata.png)](https://katkim0307.github.io/COVID-19_Response_Comparison//Data/output/us_state_latest.html)
 
-[![sample08](https://raw.githubusercontent.com/katkim0307/COVID-19_Response_Comparison/master/Data/image/sample08.PNG)](https://katkim0307.github.io/COVID-19_Response_Comparison//Data/output/us_state_history.html)
+[![sample08](https://raw.githubusercontent.com/katkim0307/COVID-19_Response_Comparison/master/Data/image/us_cases_choro_slider.png)](https://katkim0307.github.io/COVID-19_Response_Comparison//Data/output/us_state_history.html)
+
+[![us_county](https://raw.githubusercontent.com/katkim0307/COVID-19_Response_Comparison/master/Data/image/us_county_choro.png)](https://katkim0307.github.io/COVID-19_Response_Comparison//Data/output/us_county_latest.html)
 
 #### Korea Choropleth Map of Total Confirmed Cases
 ![sample02](https://raw.githubusercontent.com/katkim0307/COVID-19_Response_Comparison/master/Data/image/kor_cases_choro_basic.png)
