@@ -37,6 +37,7 @@ South Korea has been looked up to by many country leaders who are fighting again
 ![sample04](https://raw.githubusercontent.com/katkim0307/COVID-19_Response_Comparison/master/Data/image/sample04.PNG)
 ![sample05](https://raw.githubusercontent.com/katkim0307/COVID-19_Response_Comparison/master/Data/image/sample05.PNG)
 ![sample06](https://raw.githubusercontent.com/katkim0307/COVID-19_Response_Comparison/master/Data/image/sample06.PNG)
+![per_1000](https://raw.githubusercontent.com/katkim0307/COVID-19_Response_Comparison/master/Data/image/us_vs_kor_per_1000.PNG)
 
 
 ## Resources
