@@ -48,7 +48,7 @@ def manipulate_jhu_county_df(df_to_fix, df_to_manip_with1, df_to_manip_with2):
         elif df_to_fix.loc[i, 'Admin2'] == 'Kansas City':
             df_to_fix.at[i, 'FIPS'] = '29095'
 
-    # Converting individual date colums into rows a.k.a Transpose
+    # Converting individual date colums into rows a.k.a Melting
     jhu_county_df = df_to_fix.melt(id_vars=['Admin2', 'Province_State', 'FIPS', 'Lat', 'Long_'],
                                    var_name='Date',
                                    value_name='Cases')

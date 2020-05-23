@@ -55,6 +55,30 @@ kor_provinces_gdf = set_kor_provinces_boundary(
 ##                                        ##
 ############################################
 
+# Our World in Data (owid) COVID-19 Data
+fields = ['iso_code', 'location', 'date', 'total_cases', 'new_cases', 'total_deaths', 'new_deaths',
+          'total_cases_per_million', 'new_cases_per_million', 'total_deaths_per_million', 'new_deaths_per_million',
+          'total_tests', 'new_tests', 'total_tests_per_thousand', 'new_tests_per_thousand', 'population']
+owid_complete_df = pd.read_csv('https://covid.ourworldindata.org/data/owid-covid-data.csv', usecols=fields)
+owid_complete_df = owid_complete_df[
+    (owid_complete_df['location'] == 'United States') |
+    (owid_complete_df['location'] == 'South Korea')
+    ]
+
+owid_complete_df['datetime'] = pd.to_datetime(owid_complete_df['date'])
+
+# US OWID Data
+owid_us_df = owid_complete_df[owid_complete_df['iso_code'] == 'USA']
+owid_us_df['datetime'] = pd.to_datetime(owid_us_df['date'])
+owid_us_plot_df = owid_us_df.copy()
+owid_us_plot_df.set_index('datetime', inplace=True)
+
+# KOR OWID Data
+owid_kor_df = owid_complete_df[owid_complete_df['iso_code'] == 'KOR']
+owid_kor_df['datetime'] = pd.to_datetime(owid_kor_df['date'])
+owid_kor_plot_df = owid_kor_df.copy()
+owid_kor_plot_df.set_index('datetime', inplace=True)
+
 # NYTimes US County COVID-19 Data
 nytimes_counties_df = pd.read_csv('https://raw.githubusercontent.com/nytimes/covid-19-data/master/us-counties.csv')
 nytimes_counties_df['datetime'] = pd.to_datetime(nytimes_counties_df['date'])
@@ -163,7 +187,7 @@ kor_cov19_province_now_gdf.plot(
 
 # Title
 kor_update = kor_province_now_df.iloc[-1]['Date'].to_pydatetime()
-ax.set_title('South Korea Total Confirmed Cases (as of ' + kor_update.strftime('%b %d') + ')', fontdict={'size': 20});
+ax.set_title('South Korea Total Confirmed Cases (as of ' + kor_update.strftime('%b %d') + ')', fontdict={'size': 20})
 
 # Normalize the Legend Color and create the legend bar
 vmin, vmax = kor_cov19_province_now_gdf.Confirm_Tot.min(), kor_cov19_province_hist_plot_gdf.Confirm_Tot.max()
@@ -201,7 +225,7 @@ us_cov19_states_now_gdf.plot(
 
 # Title
 today_date = datetime.datetime.now()
-ax.set_title('US Total Confirmed Cases (as of ' + today_date.strftime('%b %d') + ')', fontdict={'size': 20});
+ax.set_title('US Total Confirmed Cases (as of ' + today_date.strftime('%b %d') + ')', fontdict={'size': 20})
 
 # Normalize the Legend Color and create the legend bar
 vmin, vmax = us_cov19_states_now_gdf.positive.min(), us_cov19_states_now_gdf.positive.max()
@@ -223,7 +247,7 @@ ax.get_xaxis().set_visible(False)
 ax.get_yaxis().set_visible(False)
 
 # Crop the map to an appropriate size (via coordinate)
-ax.set_ylim(-2500000, 1000000);
+ax.set_ylim(-2500000, 1000000)
 
 # ------------------------------------------------------------#
 # Latest US State Confirmed Cases Interactive Choropleth Map  #
@@ -306,16 +330,15 @@ jhu_county_latest_df = (jhu_county_df[jhu_county_df['datetime'] == jhu_county_df
 color_scale = ['#ffffff', '#ffe6e6', '#ffcccc', '#ffb3b3', '#ff9999', '#ff8080', '#ff6666', '#ff4d4d', '#ff3333',
                '#ff1a1a', '#ff0000', '#e60000', '#cc0000', '#b30000', '#990000', '#800000', '#660000', '#4d0000']
 
-cases_min = jhu_county_latest_df['Cases'].min()
-cases_max = jhu_county_latest_df['Cases'].max()
-endpts = list(np.linspace(cases_min, cases_max, num=len(color_scale) - 1))
+quantiles = list(jhu_county_latest_df['Cases'].quantile(
+    [0.1, 0.25, 0.3, 0.35, 0.4, 0.45, 0.5, 0.55, 0.6, 0.65, 0.7, 0.75, 0.8, 0.85, 0.9, 0.95, 1]))
 fips = jhu_county_latest_df['FIPS'].tolist()
 values = jhu_county_latest_df['Cases'].tolist()
 
 fig = ff.create_choropleth(
     fips=fips, values=values,
     scope=['usa'],
-    binning_endpoints=endpts,
+    binning_endpoints=quantiles,
     colorscale=color_scale,
     show_state_data=False,
     show_hover=True,
@@ -341,7 +364,7 @@ ctp_us_hist_plot_df.plot(
     y=['positive', 'test'],
     color=['#F1948A', '#82E0AA'],
     linewidth=3,
-    ylim=(0, 700000),
+    ylim=(0, 1000000),
 )
 
 kor_hist_plot_df.plot(
@@ -350,7 +373,7 @@ kor_hist_plot_df.plot(
     y=['Confirm_Tot', 'Test_Tot'],
     color=['#F1948A', '#82E0AA'],
     linewidth=3,
-    ylim=(0, 700000),
+    ylim=(0, 1000000),
 )
 
 ax.legend(['US Total Confirmed', 'US Total Tests'], loc='upper left')
@@ -362,12 +385,54 @@ ax.grid(linewidth=0.2)
 
 ax2.xaxis.set_major_locator(mdates.WeekdayLocator())
 ax2.xaxis.set_major_formatter(mdates.DateFormatter('%m/%d'))
-ax.set_title('US Vs. South Korea \n COVID-19 Total Cases & Tests', fontdict={'size': 20});
+ax.set_title('US Vs. South Korea \n COVID-19 Total Cases & Tests', fontdict={'size': 20})
 
 plt.show()
 
+# ------------------------------------------------------------------------------#
+#                                  US vs. KOR                                   #
+# Line Graph Comparison of Total Cases per million and Total Tests per thousand #
+# ------------------------------------------------------------------------------#
+
+fig, (ax1, ax2) = plt.subplots(2, 1, figsize=(15, 10))
+
+ax1.plot(owid_us_plot_df['total_cases_per_million'], label='US Cases per mill', color='#F1948A', linewidth=3)
+ax1.plot(owid_kor_plot_df['total_cases_per_million'], label='KOR Cases per mill', color='#F1948A', linewidth=3, ls='--')
+
+ax2.plot(owid_us_plot_df['total_tests_per_thousand'], label='US Tests per 1000', color='#82E0AA', linewidth=3)
+ax2.plot(owid_kor_plot_df['total_tests_per_thousand'], label='KOR Tests per 1000', color='#82E0AA', linewidth=3,
+         ls='--')
+
+# Set titles
+ax1.set_title('US vs. KOR Total Cases per million', fontdict={'size': 20})
+ax2.set_title('US vs. KOR Total Tests per thousand', fontdict={'size': 20})
+
+# Set legends
+ax1.legend(['US Cases per million', 'KOR Cases per million'], loc='upper left')
+ax2.legend(['US Tests per thosand', 'KOR Tests per thousand'], loc='upper left')
+
+# Set axes limit
+start_date = datetime.datetime(2020, 1, 20)
+end_date = today_date  # datetime.datetime(2020, 4, 30)
+ax1.set_xlim(start_date, end_date)
+ax2.set_xlim(start_date, end_date)
+ax1.set_ylim(0, 1000)
+ax2.set_ylim(0, 50)
+
+# Set grid lines
+ax1.grid(linewidth=0.2)
+ax2.grid(linewidth=0.2)
+
+# set ticks every week
+ax1.xaxis.set_major_locator(mdates.WeekdayLocator())
+ax1.xaxis.set_major_formatter(mdates.DateFormatter('%m/%d'))
+
+# #set major ticks format
+ax2.xaxis.set_major_locator(mdates.WeekdayLocator())
+ax2.xaxis.set_major_formatter(mdates.DateFormatter('%m/%d'))
+
 # --------------------------------------------------#
-#                    US vs. KOR                     #
+#                 Early US vs. KOR                  #
 # Line Graph Comparison of Total Cases/Deaths/Tests #
 # --------------------------------------------------#
 fig, (ax1, ax2) = plt.subplots(2, 1, figsize=(15, 10))
@@ -409,7 +474,7 @@ ax2.xaxis.set_major_locator(mdates.WeekdayLocator())
 ax2.xaxis.set_major_formatter(mdates.DateFormatter('%m/%d'))
 
 # ----------------------------------------#
-#               US vs. KOR                #
+#            Early US vs. KOR             #
 # Bar & Line Graph of Total Cases & Tests #
 # ----------------------------------------#
 fig, (ax1, ax2) = plt.subplots(2, 1, figsize=(15, 10))
@@ -463,7 +528,7 @@ ax2.xaxis.set_major_locator(mdates.WeekdayLocator())
 ax2.xaxis.set_major_formatter(mdates.DateFormatter('%m/%d'))
 
 # -------------------------------------------------#
-#                   US vs. KOR                     #
+#                Early US vs. KOR                  #
 # Overlaid Bar & Line Graph of Total Cases & Tests #
 # -------------------------------------------------#
 fig, ax = plt.subplots(figsize=(15, 6))

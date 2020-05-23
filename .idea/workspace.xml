@@ -20,6 +20,22 @@
   </component>
   <component name="ChangeListManager">
     <list default="true" id="6424fead-2dfe-4df5-92d3-7fd77117c0a9" name="Default Changelist" comment="">
+      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Data/image/us_cases_choro_basic.png" beforeDir="false" afterPath="$PROJECT_DIR$/Data/image/us_cases_choro_basic.png" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Data/image/us_cases_choro_hoverdata.png" beforeDir="false" afterPath="$PROJECT_DIR$/Data/image/us_cases_choro_hoverdata.png" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Data/image/us_cases_choro_slider.png" beforeDir="false" afterPath="$PROJECT_DIR$/Data/image/us_cases_choro_slider.png" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Data/image/us_county_choro.png" beforeDir="false" afterPath="$PROJECT_DIR$/Data/image/us_county_choro.png" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Data/image/us_vs_kor_early_bar_line_graph_compare.png" beforeDir="false" afterPath="$PROJECT_DIR$/Data/image/us_vs_kor_early_bar_line_graph_compare.png" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Data/image/us_vs_kor_early_line.png" beforeDir="false" afterPath="$PROJECT_DIR$/Data/image/us_vs_kor_early_line.png" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Data/image/us_vs_kor_early_overlaid_bar_line_graph.png" beforeDir="false" afterPath="$PROJECT_DIR$/Data/image/us_vs_kor_early_overlaid_bar_line_graph.png" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Data/image/us_vs_kor_overlaid_bar_line_graph.png" beforeDir="false" afterPath="$PROJECT_DIR$/Data/image/us_vs_kor_overlaid_bar_line_graph.png" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Data/image/us_vs_kor_overlaid_line_graph.png" beforeDir="false" afterPath="$PROJECT_DIR$/Data/image/us_vs_kor_overlaid_line_graph.png" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Data/image/us_vs_kor_per_1000.png" beforeDir="false" afterPath="$PROJECT_DIR$/Data/image/us_vs_kor_per_1000.png" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Data/output/us_county_latest.html" beforeDir="false" afterPath="$PROJECT_DIR$/Data/output/us_county_latest.html" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Data/output/us_state_history.html" beforeDir="false" afterPath="$PROJECT_DIR$/Data/output/us_state_history.html" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Data/output/us_state_latest.html" beforeDir="false" afterPath="$PROJECT_DIR$/Data/output/us_state_latest.html" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Tools/jhu_county_df_manipulate.py" beforeDir="false" afterPath="$PROJECT_DIR$/Tools/jhu_county_df_manipulate.py" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/main.py" beforeDir="false" afterPath="$PROJECT_DIR$/main.py" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/main_notebook.ipynb" beforeDir="false" afterPath="$PROJECT_DIR$/main_notebook.ipynb" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
@@ -81,6 +97,10 @@
     <option name="ADD_EXTERNAL_FILES_SILENTLY" value="true" />
   </component>
   <component name="WindowStateProjectService">
+    <state x="0" y="18" key="#Inspections" timestamp="1590263410784">
+      <screen x="0" y="0" width="1280" height="680" />
+    </state>
+    <state x="0" y="18" key="#Inspections/0.0.1280.680@0.0.1280.680" timestamp="1590263410784" />
     <state x="191" y="0" key="#com.intellij.execution.impl.EditConfigurationsDialog" timestamp="1589175054716">
       <screen x="0" y="0" width="1280" height="680" />
     </state>
