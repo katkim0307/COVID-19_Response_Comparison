@@ -20,23 +20,7 @@
   </component>
   <component name="ChangeListManager">
     <list default="true" id="6424fead-2dfe-4df5-92d3-7fd77117c0a9" name="Default Changelist" comment="">
-      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Data/image/us_cases_choro_basic.png" beforeDir="false" afterPath="$PROJECT_DIR$/Data/image/us_cases_choro_basic.png" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Data/image/us_cases_choro_hoverdata.png" beforeDir="false" afterPath="$PROJECT_DIR$/Data/image/us_cases_choro_hoverdata.png" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Data/image/us_cases_choro_slider.png" beforeDir="false" afterPath="$PROJECT_DIR$/Data/image/us_cases_choro_slider.png" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Data/image/us_county_choro.png" beforeDir="false" afterPath="$PROJECT_DIR$/Data/image/us_county_choro.png" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Data/image/us_vs_kor_early_bar_line_graph_compare.png" beforeDir="false" afterPath="$PROJECT_DIR$/Data/image/us_vs_kor_early_bar_line_graph_compare.png" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Data/image/us_vs_kor_early_line.png" beforeDir="false" afterPath="$PROJECT_DIR$/Data/image/us_vs_kor_early_line.png" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Data/image/us_vs_kor_early_overlaid_bar_line_graph.png" beforeDir="false" afterPath="$PROJECT_DIR$/Data/image/us_vs_kor_early_overlaid_bar_line_graph.png" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Data/image/us_vs_kor_overlaid_bar_line_graph.png" beforeDir="false" afterPath="$PROJECT_DIR$/Data/image/us_vs_kor_overlaid_bar_line_graph.png" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Data/image/us_vs_kor_overlaid_line_graph.png" beforeDir="false" afterPath="$PROJECT_DIR$/Data/image/us_vs_kor_overlaid_line_graph.png" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Data/image/us_vs_kor_per_1000.png" beforeDir="false" afterPath="$PROJECT_DIR$/Data/image/us_vs_kor_per_1000.png" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Data/output/us_county_latest.html" beforeDir="false" afterPath="$PROJECT_DIR$/Data/output/us_county_latest.html" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Data/output/us_state_history.html" beforeDir="false" afterPath="$PROJECT_DIR$/Data/output/us_state_history.html" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Data/output/us_state_latest.html" beforeDir="false" afterPath="$PROJECT_DIR$/Data/output/us_state_latest.html" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Tools/jhu_county_df_manipulate.py" beforeDir="false" afterPath="$PROJECT_DIR$/Tools/jhu_county_df_manipulate.py" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/main.py" beforeDir="false" afterPath="$PROJECT_DIR$/main.py" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/main_notebook.ipynb" beforeDir="false" afterPath="$PROJECT_DIR$/main_notebook.ipynb" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.ipynb_checkpoints/main_notebook-checkpoint.ipynb" beforeDir="false" afterPath="$PROJECT_DIR$/.ipynb_checkpoints/main_notebook-checkpoint.ipynb" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
